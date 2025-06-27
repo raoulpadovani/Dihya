@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://votre-username.github.io/traiteur/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1 
