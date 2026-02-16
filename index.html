@@ -4,76 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Meta Tags -->
-    <title>DIHYA TRAITEUR - Cuisine berbère authentique à Marseille | Service traiteur événements</title>
-    <meta name="description" content="Dihya Traiteur - Cuisine berbère authentique à Marseille. Service traiteur pour mariages, baptêmes, événements d'entreprise. Plats traditionnels faits maison, chakhchoukha, poulet aux olives. Zone d'intervention : Marseille et région PACA.">
-    <meta name="keywords" content="traiteur marseille, cuisine berbère, mariage marseille, événement entreprise, service traiteur, chakhchoukha, poulet aux olives, cours de cuisine marseille, traiteur événement marseille">
-    <meta name="author" content="DIHYA TRAITEUR">
-    <meta name="robots" content="index, follow">
+    <title>DIHYA TRAITEUR - Cuisine berbère authentique à Marseille | Service traiteur événements
+
+    </title>
     
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://votre-username.github.io/traiteur/">
-    <meta property="og:title" content="DIHYA TRAITEUR - Cuisine berbère authentique à Marseille">
-    <meta property="og:description" content="Service traiteur berbère authentique pour vos événements à Marseille. Mariages, baptêmes, événements d'entreprise. Cuisine traditionnelle faite maison.">
-    <meta property="og:image" content="https://votre-username.github.io/traiteur/assets/logo/logo.png">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://votre-username.github.io/traiteur/">
-    <meta property="twitter:title" content="DIHYA TRAITEUR - Cuisine berbère à Marseille">
-    <meta property="twitter:description" content="Service traiteur berbère authentique pour vos événements à Marseille">
-    <meta property="twitter:image" content="https://votre-username.github.io/traiteur/assets/logo/logo.png">
-    
-    <!-- Local Business Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Restaurant",
-        "name": "DIHYA TRAITEUR",
-        "description": "Service traiteur berbère authentique à Marseille",
-        "url": "https://votre-username.github.io/traiteur",
-        "telephone": "+33646852234",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "8 Rue d'Hozier",
-            "addressLocality": "Marseille",
-            "postalCode": "13001",
-            "addressCountry": "FR"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 43.2944805,
-            "longitude": 5.3707451
-        },
-        "openingHours": "Mo-Sa 09:00-19:00",
-        "servesCuisine": "Berbère",
-        "priceRange": "€€",
-        "areaServed": "Marseille, PACA"
-    }
-    </script>
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
    <link rel="stylesheet" href="style.css">
-   <script src="script.js"></script>
    
 </head>
 <body class="font-sans">
-    <!-- Header -->
-    <header class="fixed w-full bg-white shadow-md z-50">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center">
-                <img src="assets/logo/logo.png" alt="logo" class="w-20 h-20 ml-6">
-                
+    
+    <header class="fixed w-full shadow-md z-50">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="assets/logo/Logo_DIHYA__1_-removebg-preview.png" alt="logo" class="w-16 h-16">
+                <div class="flex flex-col">
+                    <h1 class="text-2xl font-bold" style="color: #4A90C8;">DIHYA</h1>
+                    <p class="text-sm font-medium" style="color: #000;">RESTAURANT</p>
+                    <p class="text-xs" style="color: #6B7280;">Spécialités Chaouis</p>
+                </div>
             </div>
             
-            <nav class="hidden md:flex space-x-8">
-                <a href="#home" class="text-gray-800 hover:text-amber-600 font-medium">Accueil</a>
-                <a href="#about" class="text-gray-800 hover:text-amber-600 font-medium">À propos</a>
-                <a href="#menu" class="text-gray-800 hover:text-amber-600 font-medium">Services</a>
-                <a href="#gallery" class="text-gray-800 hover:text-amber-600 font-medium">Galerie</a>
-                <a href="#contact" class="text-gray-800 hover:text-amber-600 font-medium">Contact</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-amber-600 font-bold text-sm border-b-2 border-amber-600">
+                    <i class="fas fa-utensils mr-1"></i>Restaurant
+                </a>
+                <a href="traiteur.html" class="text-gray-800 hover:text-amber-600 font-medium text-sm">
+                    <i class="fas fa-concierge-bell mr-1"></i>Traiteur
+                </a>
+                <a href="#about" class="text-gray-800 hover:text-amber-600 font-medium text-sm">À propos</a>
+                <a href="#carte" class="text-gray-800 hover:text-amber-600 font-medium text-sm">Notre Carte</a>
+                <a href="#gallery" class="text-gray-800 hover:text-amber-600 font-medium text-sm">Galerie</a>
+                <a href="#contact" class="text-gray-800 hover:text-amber-600 font-medium text-sm">Contact</a>
             </nav>
             
             <div class="md:hidden">
@@ -83,31 +47,40 @@
             </div>
         </div>
         
-        <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
             <div class="flex flex-col space-y-4">
-                <a href="#home" class="text-gray-800 hover:text-amber-600 font-medium">Accueil</a>
+                <a href="index.html" class="text-amber-600 font-bold">
+                    <i class="fas fa-utensils mr-2"></i>Restaurant
+                </a>
+                <a href="traiteur.html" class="text-gray-800 hover:text-amber-600 font-medium">
+                    <i class="fas fa-concierge-bell mr-2"></i>Traiteur
+                </a>
                 <a href="#about" class="text-gray-800 hover:text-amber-600 font-medium">À propos</a>
-                <a href="#menu" class="text-gray-800 hover:text-amber-600 font-medium">Services</a>
+                <a href="#carte" class="text-gray-800 hover:text-amber-600 font-medium">Notre Carte</a>
                 <a href="#gallery" class="text-gray-800 hover:text-amber-600 font-medium">Galerie</a>
                 <a href="#contact" class="text-gray-800 hover:text-amber-600 font-medium">Contact</a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section id="home" class="hero min-h-screen flex items-center pt-20">
         <div class="container mx-auto px-4 text-center text-white">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">Cuisine méditerranéenne</h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Des créations orientales authentiques sur mesure pour vos événements </p>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">Cuisine méditerranéenne</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Des créations orientales authentiques sur mesure pour vos événements</p>
+            
+            
+            
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#contact" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">Contactez-nous</a>
-                <a href="#gallery" class="bg-transparent hover:bg-white hover:text-gray-900 text-white font-bold py-3 px-8 border-2 border-white rounded-full transition duration-300">Voir nos produits</a>
+                <a href="https://deliveroo.fr/fr/menu/marseille/marseille-port/dihya?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=COLLECTION" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-4 px-10 rounded-full transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                    <i class="fas fa-calendar-check mr-2"></i>Commander en ligne
+                </a>
+                <a href="#carte" class="bg-transparent hover:bg-white hover:text-gray-900 text-white font-bold py-4 px-10 border-2 border-white rounded-full transition duration-300">
+                    <i class="fas fa-utensils mr-2"></i>Voir notre carte
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
@@ -116,305 +89,439 @@
             </div>
             
             <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-4/5">
-                    <img src="assets/image/histoire.png" alt="Notre équipe" class="rounded-lg shadow-xl w-full h-500">
+                <div class="md:w-1/3">
+                    <img src="assets/image/histoire.png" alt="Restaurant Dihya" class="rounded-lg shadow-2xl w-full object-cover">
                 </div>
                 
-                <div class="mb-20">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Une passion pour la cuisine</h3>
-                    <p class="text-gray-600 mb-4">Au cœur de Marseille, Dihya célèbre la richesse de la cuisine berbère à travers des plats faits maison, généreux et authentiques. Chakhchoukha, poulet aux olives, bricks, batbouts… tout est préparé avec une attention sincère aux saveurs. Dans une ambiance conviviale et chaleureuse, Dihya propose aussi un service traiteur sur demande, pour des événements à son image : simples, gourmands et remplis de cœur. .</p>
+                <div class="md:w-2/3">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-6">Une passion pour la cuisine berbère</h3>
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">Au cœur de Marseille, <span class="font-semibold text-amber-600">Dihya</span> célèbre la richesse de la cuisine berbère à travers des plats faits maison, généreux et authentiques.</p>
                     
-                    <div class="grid grid-cols-2 gap-4 mb-6">
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle text-amber-600 mr-2 text-xl"></i>
-                            <span class="text-gray-700">Produits frais & locaux</span>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Chakhchoukha, poulet aux olives, bricks, batbouts… tout est préparé avec une attention sincère aux saveurs. Dans une ambiance conviviale et chaleureuse, nous proposons aussi un service traiteur sur demande, pour des événements à notre image : simples, gourmands et remplis de cœur.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+                        <div class="flex items-center bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all">
+                            <i class="fas fa-check-circle text-amber-600 mr-3 text-2xl"></i>
+                            <span class="text-gray-700 font-medium">Produits frais & locaux</span>
                         </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle text-amber-600 mr-2 text-xl"></i>
-                            <span class="text-gray-700">Service personnalisé</span>
+                        <div class="flex items-center bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all">
+                            <i class="fas fa-check-circle text-amber-600 mr-3 text-2xl"></i>
+                            <span class="text-gray-700 font-medium">100% Fait maison</span>
                         </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle text-amber-600 mr-2 text-xl"></i>
-                            <span class="text-gray-700">Présentation raffinée</span>
+                        <div class="flex items-center bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all">
+                            <i class="fas fa-check-circle text-amber-600 mr-3 text-2xl"></i>
+                            <span class="text-gray-700 font-medium">Cuisine authentique</span>
                         </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle text-amber-600 mr-2 text-xl"></i>
-                            <span class="text-gray-700">Équipe professionnelle</span>
+                        <div class="flex items-center bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all">
+                            <i class="fas fa-check-circle text-amber-600 mr-3 text-2xl"></i>
+                            <span class="text-gray-700 font-medium">Service traiteur</span>
                         </div>
                     </div>
                     
-                    
+                    <div class="mt-8">
+                        <a href="traiteur.html" class="inline-block bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                            <i class="fas fa-concierge-bell mr-2"></i>Découvrir notre service traiteur
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Menu Section -->
-    <section id="menu" class="py-20 bg-white">
+    <section id="carte" class="py-20 bg-gradient-to-br from-amber-50 to-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nos services</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Nos prestations allient produits de saison et tradition artisanale pour une expérience unique.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Notre Carte</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Découvrez nos spécialités orientales authentiques préparées avec amour</p>
                 <div class="w-20 h-1 bg-amber-600 mx-auto mt-4"></div>
             </div>
             
-           
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Menu Item 1 -->
-                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md border border-gray-100" data-category="wedding">
-                    <div class="relative overflow-hidden h-64">
-                        <img src="assets/image/mariage.png" class="w-full h-full object-cover">
-                        
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-pepper-hot text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">Entrées</h3>
                     </div>
-                    <div class="p-6">
-                        
-                        <ul class="space-y-2 text-gray-600">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
-                                <span>Mariage</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
-                                <span>Baptême</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
-                                <span>Anniversaire</span>
-                            </li>
-                            
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
-                                <span>Menu personnalisé</span>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between items-center border-b border-gray-100 pb-2">
+                            <span class="text-gray-700">Brick à l'oeuf</span>
+                            <span class="text-amber-600 font-bold">5€</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-gray-100 pb-2">
+                            <span class="text-gray-700">Brick au thon</span>
+                            <span class="text-amber-600 font-bold">5€</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-gray-100 pb-2">
+                            <span class="text-gray-700">Batbout farci</span>
+                            <span class="text-amber-600 font-bold">6€</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-gray-100 pb-2">
+                            <span class="text-gray-700">Salade orientale</span>
+                            <span class="text-amber-600 font-bold">8€</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="text-gray-700">Assortiment mezze</span>
+                            <span class="text-amber-600 font-bold">12€</span>
+                        </li>
+                    </ul>
                 </div>
                 
-                <!-- Menu Item 2 -->
-                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md border border-gray-100" data-category="corporate">
-                    <div class="relative overflow-hidden h-64">
-                        <img src="assets/image/entreprise.png" class="w-full h-full object-cover">
-                        
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-drumstick-bite text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">Plats</h3>
                     </div>
-                    <div class="p-6">
-                        
-                        <ul class="space-y-2 text-gray-600">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
-                                <span>Séminaires / conférences</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
-                                <span>Inaugurations</span>
-                            </li>
-                            
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
-                                <span>Réunions d'équipe ou comités de direction</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
-                                <span>Menu personnalisé</span>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between items-center border-b border-gray-100 pb-2">
+                            <span class="text-gray-700">Chakhchoukha</span>
+                            <span class="text-amber-600 font-bold">14€</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-gray-100 pb-2">
+                            <span class="text-gray-700">Poulet aux olives</span>
+                            <span class="text-amber-600 font-bold">15€</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-gray-100 pb-2">
+                            <span class="text-gray-700">Couscous royal</span>
+                            <span class="text-amber-600 font-bold">16€</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-gray-100 pb-2">
+                            <span class="text-gray-700">Tajine agneau</span>
+                            <span class="text-amber-600 font-bold">17€</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="text-gray-700">Plat végétarien</span>
+                            <span class="text-amber-600 font-bold">12€</span>
+                        </li>
+                    </ul>
                 </div>
                 
-                <!-- Menu Item 3 -->
-                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md border border-gray-100" data-category="private">
-                    <div class="relative overflow-hidden h-64">
-                        <img src="assets/image/cours.png" alt="Menu Privé" class="w-full h-full object-cover">
-                        
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-cookie-bite text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">Desserts</h3>
                     </div>
-                    <div class="p-6">
-                        
-                        <ul class="space-y-2 text-gray-600">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
-                                <span>Cours de cuisine</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
-                                <span>Accords mets-vins optionnels</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
-                                <span>Service à domicile disponible</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
-                                <span>Menu personnalisé</span>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between items-center border-b border-gray-100 pb-2">
+                            <span class="text-gray-700">Baklawa</span>
+                            <span class="text-amber-600 font-bold">4€</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-gray-100 pb-2">
+                            <span class="text-gray-700">Makroud</span>
+                            <span class="text-amber-600 font-bold">4€</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-gray-100 pb-2">
+                            <span class="text-gray-700">Cornes de gazelle</span>
+                            <span class="text-amber-600 font-bold">5€</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-gray-100 pb-2">
+                            <span class="text-gray-700">Pâtisserie orientale</span>
+                            <span class="text-amber-600 font-bold">6€</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="text-gray-700">Assortiment (500g)</span>
+                            <span class="text-amber-600 font-bold">15€</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
             
-            
+            <div class="text-center">
+                <a href="#contact" class="inline-block bg-amber-600 hover:bg-amber-700 text-white font-bold py-4 px-10 rounded-full transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                    <i class="fas fa-download mr-2"></i>Télécharger le menu complet (PDF)
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="py-20 bg-gray-50">
+    <section id="gallery" class="py-20 bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Notre galerie</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Découvrez nos réalisations et laissez-vous inspirer pour votre prochain événement.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Notre galerie</h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">Découvrez nos réalisations et laissez-vous inspirer pour votre prochain événement.</p>
                 <div class="w-20 h-1 bg-amber-600 mx-auto mt-4"></div>
             </div>
             
-            
-            <!-- Slideshow Container -->
-            <div class="slideshow-container max-w-4xl mx-auto relative">
-                <!-- Slide 1 -->
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 9</div>
-                    <img src="assets/image/plat (4).png" alt="Présentation culinaire" class="w-full h-96 object-cover rounded-lg shadow-lg">
+            <div class="max-w-6xl mx-auto">
+                <div class="relative overflow-hidden rounded-2xl shadow-2xl bg-black">
+                    <div class="gallery-main relative h-[280px] md:h-[380px]">
+                        <div class="gallery-slide active absolute inset-0 transition-opacity duration-700" style="opacity: 1;">
+                            <img src="assets/image/plat (4).png" alt="Présentation culinaire" class="w-full h-full object-cover">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                                <p class="text-white text-lg font-medium">Présentation culinaire</p>
+                            </div>
+                        </div>
+                        <div class="gallery-slide absolute inset-0 transition-opacity duration-700" style="opacity: 0;">
+                            <img src="assets/image/expo.jpeg" alt="Buffet traiteur" class="w-full h-full object-cover">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                                <p class="text-white text-lg font-medium">Buffet traiteur</p>
+                            </div>
+                        </div>
+                        <div class="gallery-slide absolute inset-0 transition-opacity duration-700" style="opacity: 0;">
+                            <img src="assets/image/expo2.jpeg" alt="Plats traditionnels" class="w-full h-full object-cover">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                                <p class="text-white text-lg font-medium">Plats traditionnels</p>
+                            </div>
+                        </div>
+                        <div class="gallery-slide absolute inset-0 transition-opacity duration-700" style="opacity: 0;">
+                            <img src="assets/image/plat (6).png" alt="Ratatouille" class="w-full h-full object-cover">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                                <p class="text-white text-lg font-medium">Ratatouille maison</p>
+                            </div>
+                        </div>
+                        <div class="gallery-slide absolute inset-0 transition-opacity duration-700" style="opacity: 0;">
+                            <img src="assets/image/plat (2).png" alt="Présentation élégante" class="w-full h-full object-cover">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                                <p class="text-white text-lg font-medium">Présentation élégante</p>
+                            </div>
+                        </div>
+                        <div class="gallery-slide absolute inset-0 transition-opacity duration-700" style="opacity: 0;">
+                            <img src="assets/image/plat (1).png" alt="Cuisine traditionnelle" class="w-full h-full object-cover">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                                <p class="text-white text-lg font-medium">Cuisine traditionnelle</p>
+                            </div>
+                        </div>
+                        <div class="gallery-slide absolute inset-0 transition-opacity duration-700" style="opacity: 0;">
+                            <img src="assets/image/veger.png" alt="Service traiteur" class="w-full h-full object-cover">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                                <p class="text-white text-lg font-medium">Service traiteur</p>
+                            </div>
+                        </div>
+                        <div class="gallery-slide absolute inset-0 transition-opacity duration-700" style="opacity: 0;">
+                            <img src="assets/image/plat (5).png" alt="Événements spéciaux" class="w-full h-full object-cover">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                                <p class="text-white text-lg font-medium">Événements spéciaux</p>
+                            </div>
+                        </div>
+                        <div class="gallery-slide absolute inset-0 transition-opacity duration-700" style="opacity: 0;">
+                            <img src="assets/image/plat (9).png" alt="Création culinaire" class="w-full h-full object-cover">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                                <p class="text-white text-lg font-medium">Création culinaire</p>
+                            </div>
+                        </div>
+                    </div>
                     
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 9</div>
-                    <img src="assets/image/expo.jpeg" alt="Buffet traiteur" class="w-full h-96 object-cover rounded-lg shadow-lg">
+                    <button onclick="changeGallerySlide(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center text-white text-2xl transition-all duration-300 hover:scale-110">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button onclick="changeGallerySlide(1)" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center text-white text-2xl transition-all duration-300 hover:scale-110">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                     
+                    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                        <span class="gallery-dot w-2 h-2 bg-white/50 rounded-full cursor-pointer transition-all duration-300 hover:bg-white" onclick="setGallerySlide(0)"></span>
+                        <span class="gallery-dot w-2 h-2 bg-white/50 rounded-full cursor-pointer transition-all duration-300 hover:bg-white" onclick="setGallerySlide(1)"></span>
+                        <span class="gallery-dot w-2 h-2 bg-white/50 rounded-full cursor-pointer transition-all duration-300 hover:bg-white" onclick="setGallerySlide(2)"></span>
+                        <span class="gallery-dot w-2 h-2 bg-white/50 rounded-full cursor-pointer transition-all duration-300 hover:bg-white" onclick="setGallerySlide(3)"></span>
+                        <span class="gallery-dot w-2 h-2 bg-white/50 rounded-full cursor-pointer transition-all duration-300 hover:bg-white" onclick="setGallerySlide(4)"></span>
+                        <span class="gallery-dot w-2 h-2 bg-white/50 rounded-full cursor-pointer transition-all duration-300 hover:bg-white" onclick="setGallerySlide(5)"></span>
+                        <span class="gallery-dot w-2 h-2 bg-white/50 rounded-full cursor-pointer transition-all duration-300 hover:bg-white" onclick="setGallerySlide(6)"></span>
+                        <span class="gallery-dot w-2 h-2 bg-white/50 rounded-full cursor-pointer transition-all duration-300 hover:bg-white" onclick="setGallerySlide(7)"></span>
+                        <span class="gallery-dot w-2 h-2 bg-white/50 rounded-full cursor-pointer transition-all duration-300 hover:bg-white" onclick="setGallerySlide(8)"></span>
+                    </div>
                 </div>
-
-                <!-- Slide 3 -->
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 9</div>
-                    <img src="assets/image/expo2.jpeg" alt="Plats traditionnels" class="w-full h-96 object-cover rounded-lg shadow-lg">
-                    
+                
+                <div class="grid grid-cols-3 md:grid-cols-9 gap-2 mt-6">
+                    <div class="gallery-thumb relative overflow-hidden rounded-lg cursor-pointer group h-20 md:h-24" onclick="setGallerySlide(0)">
+                        <img src="assets/image/plat (4).png" alt="Thumb 1" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-all duration-300"></div>
+                    </div>
+                    <div class="gallery-thumb relative overflow-hidden rounded-lg cursor-pointer group h-20 md:h-24" onclick="setGallerySlide(1)">
+                        <img src="assets/image/expo.jpeg" alt="Thumb 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-all duration-300"></div>
+                    </div>
+                    <div class="gallery-thumb relative overflow-hidden rounded-lg cursor-pointer group h-20 md:h-24" onclick="setGallerySlide(2)">
+                        <img src="assets/image/expo2.jpeg" alt="Thumb 3" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-all duration-300"></div>
+                    </div>
+                    <div class="gallery-thumb relative overflow-hidden rounded-lg cursor-pointer group h-20 md:h-24" onclick="setGallerySlide(3)">
+                        <img src="assets/image/plat (6).png" alt="Thumb 4" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-all duration-300"></div>
+                    </div>
+                    <div class="gallery-thumb relative overflow-hidden rounded-lg cursor-pointer group h-20 md:h-24" onclick="setGallerySlide(4)">
+                        <img src="assets/image/plat (2).png" alt="Thumb 5" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-all duration-300"></div>
+                    </div>
+                    <div class="gallery-thumb relative overflow-hidden rounded-lg cursor-pointer group h-20 md:h-24" onclick="setGallerySlide(5)">
+                        <img src="assets/image/plat (1).png" alt="Thumb 6" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-all duration-300"></div>
+                    </div>
+                    <div class="gallery-thumb relative overflow-hidden rounded-lg cursor-pointer group h-20 md:h-24" onclick="setGallerySlide(6)">
+                        <img src="assets/image/veger.png" alt="Thumb 7" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-all duration-300"></div>
+                    </div>
+                    <div class="gallery-thumb relative overflow-hidden rounded-lg cursor-pointer group h-20 md:h-24" onclick="setGallerySlide(7)">
+                        <img src="assets/image/plat (5).png" alt="Thumb 8" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-all duration-300"></div>
+                    </div>
+                    <div class="gallery-thumb relative overflow-hidden rounded-lg cursor-pointer group h-20 md:h-24" onclick="setGallerySlide(8)">
+                        <img src="assets/image/plat (9).png" alt="Thumb 9" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-all duration-300"></div>
+                    </div>
                 </div>
-
-                <!-- Slide 4 -->
-                <div class="mySlides fade">
-                    <div class="numbertext">4 / 9</div>
-                    <img src="assets/image/plat (6).png" alt="Ratatouille" class="w-full h-96 object-cover rounded-lg shadow-lg">
-                    
-                </div>
-
-                <!-- Slide 5 -->
-                <div class="mySlides fade">
-                    <div class="numbertext">5 / 9</div>
-                    <img src="assets/image/plat (2).png" alt="Présentation élégante" class="w-full h-96 object-cover rounded-lg shadow-lg">
-                    
-                </div>
-
-                <!-- Slide 6 -->
-                <div class="mySlides fade">
-                    <div class="numbertext">6 / 9</div>
-                    <img src="assets/image/plat (1).png" alt="Cuisine traditionnelle" class="w-full h-96 object-cover rounded-lg shadow-lg">
-                    
-                </div>
-
-                <!-- Slide 7 -->
-                <div class="mySlides fade">
-                    <div class="numbertext">7 / 9</div>
-                    <img src="assets/image/veger.png" alt="Service traiteur" class="w-full h-96 object-cover rounded-lg shadow-lg">
-                    
-                </div>
-
-                <!-- Slide 8 -->
-                <div class="mySlides fade">
-                    <div class="numbertext">8 / 9</div>
-                    <img src="assets/image/plat (5).png" alt="Événements spéciaux" class="w-full h-96 object-cover rounded-lg shadow-lg">
-                    
-                </div>
-                <!-- Slide 9 -->
-                <div class="mySlides fade">
-                    <div class="numbertext">9 / 9</div>
-                    <img src="assets/image/plat (9).png" alt="Événements spéciaux" class="w-full h-96 object-cover rounded-lg shadow-lg">
-                    
-                </div>
-
-                <!-- Navigation buttons -->
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-            </div>
-
-            <!-- Dots indicators -->
-            <div class="text-center mt-6">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
-                <span class="dot" onclick="currentSlide(4)"></span> 
-                <span class="dot" onclick="currentSlide(5)"></span> 
-                <span class="dot" onclick="currentSlide(6)"></span> 
-                <span class="dot" onclick="currentSlide(7)"></span> 
-                <span class="dot" onclick="currentSlide(8)"></span> 
-                <span class="dot" onclick="currentSlide(9)"></span> 
             </div>
         </div>
 
         
     </section>
     
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50">
+    <section class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Contactez-nous</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Prêt à organiser votre prochain événement ? Contactez-nous et nous vous répondrons dans les plus brefs délais.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Ce que disent nos clients</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Des témoignages qui parlent d'eux-mêmes</p>
                 <div class="w-20 h-1 bg-amber-600 mx-auto mt-4"></div>
             </div>
             
-            <div class="max-w-4xl mx-auto">
-                <!-- Cartes de contact principales -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                    <!-- Téléphone -->
-                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-amber-500">
-                        <div class="text-center">
-                            <div class="w-16 h-16 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                                <i class="fas fa-phone-alt text-white text-xl"></i>
-                            </div>
-                            <h3 class="text-lg font-bold text-gray-800 mb-2">Téléphone</h3>
-                            <p class="text-amber-600 font-semibold text-lg">+33 6 46 85 22 34</p>
-                            <p class="text-gray-500 text-sm mt-2">Lun-Sam : 9h-19h</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
                     </div>
-
-                    <!-- WhatsApp -->
-                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-green-500">
-                        <div class="text-center">
-                            <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                                <i class="fab fa-whatsapp text-white text-2xl"></i>
-                            </div>
-                            <h3 class="text-lg font-bold text-gray-800 mb-2">WhatsApp</h3>
-                            <p class="text-green-600 font-semibold text-lg">+33 6 46 85 22 34</p>
-                            <p class="text-gray-500 text-sm mt-2">Réponse rapide garantie</p>
+                    <p class="text-gray-600 italic mb-6">"Un service exceptionnel pour notre mariage ! Les plats étaient délicieux et authentiques. Tous nos invités ont été ravis. Merci Dihya !"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            SM
                         </div>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-blue-500">
-                        <div class="text-center">
-                            <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                                <a href="https://www.instagram.com/dihya.marseille/"><i class="fab fa-instagram text-white text-2xl"></i></a>
-                            </div>
-                            <h3 class="text-lg font-bold text-gray-800 mb-2">Instagram</h3>
-                            <p class="text-blue-600 font-semibold text-lg">dihya.marseille</p>
-                            <p class="text-gray-500 text-sm mt-2">Devis sous 24h</p>
-                        </div>
-                    </div>
-
-                    <!-- Localisation -->
-                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-purple-500">
-                        <div class="text-center">
-                            <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                                <a href="https://www.google.com/maps/place/8+Rue+d'Hozier,+13001+Marseille/@43.2944805,5.368551,17z/data=!3m1!4b1!4m6!3m5!1s0x12c9c08f95000001:0x536817606623e44!8m2!3d43.2944805!4d5.3707451!16s%2Fg%2F11c402q5tp?entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D"><i class="fas fa-map-marker-alt text-white text-xl"></i></a>
-                            </div>
-                            <h3 class="text-lg font-bold text-gray-800 mb-2">Localisation</h3>
-                            <p class="text-purple-600 font-semibold text-lg">8 Rue d'Hozier</p>
-                            <p class="text-gray-500 text-sm mt-2">Service à domicile</p>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Sarah M.</h4>
+                            <p class="text-gray-500 text-sm">Mariage - 150 personnes</p>
                         </div>
                     </div>
                 </div>
-
                 
+                <div class="testimonial-card bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"Nous faisons régulièrement appel à Dihya pour nos événements d'entreprise. Professionnalisme et qualité sont toujours au rendez-vous."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            JD
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Jean D.</h4>
+                            <p class="text-gray-500 text-sm">Entreprise Tech</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"Les saveurs m'ont transporté ! C'est exactement ce que je cherchais pour mon événement. Je recommande vivement."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            LB
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Leïla B.</h4>
+                            <p class="text-gray-500 text-sm">Baptême - 80 personnes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://www.google.com/search?sca_esv=18fb8b8532389487&rlz=1C1CHBF_frFR1083FR1083&sxsrf=ANbL-n55HjomCek5SX0azTKbEtNX2Ntdew:1770997022623&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qORaAHn2PyexrqT0BRl0Ia__4HNFnQCyBg3k3Jzc060RPBw0zgypIX2p2vC8inOvomazLNhLQ1M7y5YISjJL6vrXyzAkd&q=DIHYA+Avis&sa=X&ved=2ahUKEwj66rmD5taSAxV9BdsEHatML4cQ0bkNegQIORAH&biw=1280&bih=585&dpr=1.5&safe=active&ssui=on" target="_blank" class="inline-flex items-center gap-3 bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-700 hover:to-amber-600 text-white font-bold py-4 px-10 rounded-full transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                    <i class="fas fa-star text-xl"></i>
+                    <span class="text-lg">Laisser un avis Google</span>
+                </a>
+                <p class="text-gray-500 text-sm mt-4">Votre avis compte pour nous ❤️</p>
             </div>
         </div>
     </section>
+    
+    <footer id ="contact"class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-8">
+        <div class="container mx-auto px-2">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center max-w-2xl mx-auto">
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-amber-500">Horaires</h4>
+                    <div class="space-y-2 text-gray-400 text-sm">
+                        <div class="flex justify-center items-center gap-4">
+                            <span>Lundi - Vendredi</span>
+                            <span>9h - 19h</span>
+                        </div>
+                        <div class="flex justify-center items-center gap-4">
+                            <span>Samedi</span>
+                            <span>10h - 18h</span>
+                        </div>
+                        <div class="flex justify-center items-center gap-4">
+                            <span>Dimanche</span>
+                            <span>Fermé</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 px-3 py-2 bg-amber-600/10 border border-amber-600/30 rounded-md inline-block">
+                        <p class="text-amber-500 text-xs font-medium flex items-center gap-2">
+                            <i class="fas fa-clipboard-check"></i>
+                            Service traiteur sur réservation
+                        </p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-amber-500">Contact</h4>
+                    <div class="flex flex-col items-center gap-3 text-gray-400 text-sm">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-amber-500"></i>
+                            <a href="https://www.google.com/maps/place/12+rue+urbain+V,+13001+Marseille" target="_blank" class="hover:text-gray-300 transition-colors">12 rue urbain V, 13001 Marseille</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-phone text-amber-500"></i>
+                            <a href="tel:+33646852234" class="hover:text-gray-300 transition-colors">+33 6 46 85 22 34</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fab fa-whatsapp text-amber-500"></i>
+                            <a href="https://wa.me/33646852234" class="hover:text-gray-300 transition-colors">WhatsApp</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fab fa-instagram text-amber-500"></i>
+                            <a href="https://www.instagram.com/dihya.marseille/" class="hover:text-gray-300 transition-colors">@dihya.marseille</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex gap-3 justify-center mt-8">
+                <a href="https://www.instagram.com/dihya.marseille/" class="w-11 h-11 bg-slate-700 hover:bg-slate-600 rounded-full flex items-center justify-center transition-all duration-300">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://deliveroo.fr/fr/menu/marseille/marseille-port/dihya?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=COLLECTION" target="_blank" class="w-11 h-11 bg-slate-700 hover:bg-[#00b8a9] rounded-full flex items-center justify-center transition-all duration-300" title="Commander sur Deliveroo">
+                    <img src="assets/logo/deli.png" alt="Deliveroo" class="w-6 h-6">
+                </a>
+                <a href="tel:+33646852234" class="w-11 h-11 bg-slate-700 hover:bg-slate-600 rounded-full flex items-center justify-center transition-all duration-300">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="https://wa.me/33646852234" class="w-11 h-11 bg-slate-700 hover:bg-slate-600 rounded-full flex items-center justify-center transition-all duration-300">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

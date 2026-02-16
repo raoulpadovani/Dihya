@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>DIHYA TRAITEUR - Cuisine berbère authentique à Marseille | Service traiteur événements
+
+    </title>
+    
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
+   
+</head>
+<body id="traiteur">
+    <header class="fixed w-full shadow-md z-50">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="assets/logo/Logo_DIHYA__1_-removebg-preview.png" alt="logo" class="w-16 h-16">
+                <div class="flex flex-col">
+                    <h1 class="text-2xl font-bold" style="color: #4A90C8;">DIHYA</h1>
+                    <p class="text-sm font-medium" style="color: #000;">TRAITEUR</p>
+                    <p class="text-xs" style="color: #6B7280;">Spécialités Chaouis</p>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-800 hover:text-amber-600 font-medium text-sm">
+                    <i class="fas fa-utensils mr-1"></i>Restaurant
+                </a>
+                <a href="traiteur.html" class="text-amber-600 font-bold text-sm border-b-2 border-amber-600">
+                    <i class="fas fa-concierge-bell mr-1"></i>Traiteur
+                </a>
+                <a href="#gallery" class="text-gray-800 hover:text-amber-600 font-medium text-sm">Galerie</a>
+                <a href="#devis" class="text-gray-800 hover:text-amber-600 font-medium text-sm">Devis</a>
+                <a href="#contact" class="text-gray-800 hover:text-amber-600 font-medium text-sm">Contact</a>
+            </nav>
+            
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
+            <div class="flex flex-col space-y-4">
+                <a href="index.html" class="text-gray-800 hover:text-amber-600 font-medium">
+                    <i class="fas fa-utensils mr-2"></i>Restaurant
+                </a>
+                <a href="traiteur.html" class="text-amber-600 font-bold">
+                    <i class="fas fa-concierge-bell mr-2"></i>Traiteur
+                </a>
+                <a href="#services" class="text-gray-800 hover:text-amber-600 font-medium">Services</a>
+                <a href="#devis" class="text-gray-800 hover:text-amber-600 font-medium">Devis</a>
+                <a href="#contact" class="text-gray-800 hover:text-amber-600 font-medium">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">Cuisine méditerranéenne</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Des créations orientales authentiques sur mesure pour vos événements</p>
+            
+            
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#devis" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-4 px-10 rounded-full transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                    <i class="fas fa-calendar-check mr-2"></i>Demander un devis
+                </a>
+                <a href="index.html" class="bg-transparent hover:bg-white hover:text-gray-900 text-white font-bold py-4 px-10 border-2 border-white rounded-full transition duration-300">
+                    <i class="fas fa-utensils mr-2"></i>Voir le restaurant
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nos services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Nos prestations allient produits de saison et tradition artisanale pour une expérience unique.</p>
+                <div class="w-20 h-1 bg-amber-600 mx-auto mt-4"></div>
+            </div>
+            
+           
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md border border-gray-100" data-category="wedding">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="assets/image/mariage.png" class="w-full h-full object-cover">
+                        
+                    </div>
+                    <div class="p-6">
+                        
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
+                                <span>Mariage</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
+                                <span>Baptême</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
+                                <span>Anniversaire</span>
+                            </li>
+                            
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
+                                <span>Menu personnalisé</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6">
+                            <a href="#devis" class="block text-center bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                                <i class="fas fa-envelope mr-2"></i>Demander un devis
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md border border-gray-100" data-category="corporate">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="assets/image/entreprise.png" class="w-full h-full object-cover">
+                        
+                    </div>
+                    <div class="p-6">
+                        
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
+                                <span>Séminaires / conférences</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
+                                <span>Inaugurations</span>
+                            </li>
+                            
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
+                                <span>Réunions d'équipe ou comités de direction</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
+                                <span>Menu personnalisé</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6">
+                            <a href="#devis" class="block text-center bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                                <i class="fas fa-envelope mr-2"></i>Demander un devis
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md border border-gray-100" data-category="private">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="assets/image/cours.png" alt="Menu Privé" class="w-full h-full object-cover">
+                        
+                    </div>
+                    <div class="p-6">
+                        
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
+                                <span>Cours de cuisine</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
+                                <span>Accords mets-vins optionnels</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
+                                <span>Service à domicile disponible</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
+                                <span>Menu personnalisé</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6">
+                            <a href="#devis" class="block text-center bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                                <i class="fas fa-envelope mr-2"></i>Demander un devis
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+    <section id="devis" class="py-20 bg-gradient-to-br from-amber-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Demandez votre devis gratuit</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Remplissez le formulaire et nous vous répondrons sous 24h</p>
+                <div class="w-20 h-1 bg-amber-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-2xl p-8 md:p-12">
+                <form action="https://formspree.io/f/mjgeyjpn" method="POST" class="space-y-6">
+                    <input type="hidden" name="_subject" value="Nouvelle demande de devis - DIHYA Restaurant">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Nom complet *</label>
+                            <input type="text" name="nom" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent outline-none transition" placeholder="Votre nom">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Email *</label>
+                            <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent outline-none transition" placeholder="votre@email.com">
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Téléphone *</label>
+                            <input type="tel" name="telephone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent outline-none transition" placeholder="+33 6 XX XX XX XX">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Type d'événement *</label>
+                            <select name="type_evenement" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent outline-none transition">
+                                <option value="">Sélectionnez...</option>
+                                <option>Mariage</option>
+                                <option>Baptême</option>
+                                <option>Anniversaire</option>
+                                <option>Événement d'entreprise</option>
+                                <option>Cours de cuisine</option>
+                                <option>Autre</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Date souhaitée *</label>
+                            <input type="date" name="date" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent outline-none transition">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Nombre de personnes *</label>
+                            <input type="number" name="nombre_personnes" required min="1" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent outline-none transition" placeholder="Ex: 50">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 font-medium mb-2">Message / Demandes spécifiques</label>
+                        <textarea name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent outline-none transition resize-none" placeholder="Décrivez vos besoins, préférences alimentaires, allergies..."></textarea>
+                    </div>
+                    
+                    <div class="text-center pt-4">
+                        <button type="submit" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-4 px-12 rounded-full transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                            <i class="fas fa-paper-plane mr-2"></i>Envoyer ma demande
+                        </button>
+                        <p class="text-gray-500 text-sm mt-4">Nous vous répondrons sous 24h</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer id ="contact"class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-8">
+        <div class="container mx-auto px-2">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center max-w-2xl mx-auto">
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-amber-500">Horaires</h4>
+                    <div class="space-y-2 text-gray-400 text-sm">
+                        <div class="flex justify-center items-center gap-4">
+                            <span>Lundi - Vendredi</span>
+                            <span>9h - 19h</span>
+                        </div>
+                        <div class="flex justify-center items-center gap-4">
+                            <span>Samedi</span>
+                            <span>10h - 18h</span>
+                        </div>
+                        <div class="flex justify-center items-center gap-4">
+                            <span>Dimanche</span>
+                            <span>Fermé</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 px-3 py-2 bg-amber-600/10 border border-amber-600/30 rounded-md inline-block">
+                        <p class="text-amber-500 text-xs font-medium flex items-center gap-2">
+                            <i class="fas fa-clipboard-check"></i>
+                            Service traiteur sur réservation
+                        </p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-amber-500">Contact</h4>
+                    <div class="flex flex-col items-center gap-3 text-gray-400 text-sm">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-amber-500"></i>
+                            <a href="https://www.google.com/maps/place/12+rue+urbain+V,+13001+Marseille" target="_blank" class="hover:text-gray-300 transition-colors">12 rue urbain V, 13001 Marseille</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-phone text-amber-500"></i>
+                            <a href="tel:+33646852234" class="hover:text-gray-300 transition-colors">+33 6 46 85 22 34</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fab fa-whatsapp text-amber-500"></i>
+                            <a href="https://wa.me/33646852234" class="hover:text-gray-300 transition-colors">WhatsApp</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fab fa-instagram text-amber-500"></i>
+                            <a href="https://www.instagram.com/dihya.marseille/" class="hover:text-gray-300 transition-colors">@dihya.marseille</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex gap-3 justify-center mt-8">
+                <a href="https://www.instagram.com/dihya.marseille/" class="w-11 h-11 bg-slate-700 hover:bg-slate-600 rounded-full flex items-center justify-center transition-all duration-300">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://deliveroo.fr/fr/menu/marseille/marseille-port/dihya?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=COLLECTION" target="_blank" class="w-11 h-11 bg-slate-700 hover:bg-[#00b8a9] rounded-full flex items-center justify-center transition-all duration-300" title="Commander sur Deliveroo">
+                    <img src="assets/logo/deli.png" alt="Deliveroo" class="w-6 h-6">
+                </a>
+                <a href="tel:+33646852234" class="w-11 h-11 bg-slate-700 hover:bg-slate-600 rounded-full flex items-center justify-center transition-all duration-300">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="https://wa.me/33646852234" class="w-11 h-11 bg-slate-700 hover:bg-slate-600 rounded-full flex items-center justify-center transition-all duration-300">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

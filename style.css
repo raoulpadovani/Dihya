@@ -1,8 +1,62 @@
  
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.114), rgba(0, 0, 0, 0.6)), url('assets/image/main.png');
+            background: linear-gradient(rgba(0, 0, 0, 0.114), rgba(0, 0, 0, 0.6)), url('assets/image/unnamed.webp');
             background-size: cover;
             background-position: left;
+            animation: backgroundZoom 20s ease-in-out infinite alternate;
+        }
+        
+        @keyframes backgroundZoom {
+            0% {
+                background-size: 100%;
+            }
+            100% {
+                background-size: 110%;
+            }
+        }
+        
+        header {
+            background-color: #DED1C1;
+            transition: all 0.3s ease;
+        }
+        
+        header.scrolled {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Animations d'apparition */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 1.5s ease-in;
+        }
+        
+        /* Animation des compteurs */
+        .counter {
+            transition: all 0.5s ease;
+        }
+        
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
         }
         
         .menu-item:hover .menu-overlay {
