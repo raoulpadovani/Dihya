@@ -1,5 +1,105 @@
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
+    
+    // ===== PAGE LOADER =====
+    const loader = document.querySelector('.page-loader');
+    if (loader) {
+        setTimeout(() => {
+            loader.classList.add('hidden');
+        }, 1500);
+    }
+
+    // ===== SCROLL REVEAL ANIMATION =====
+    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+    
+    const revealOnScroll = () => {
+        const windowHeight = window.innerHeight;
+        const revealPoint = 150;
+        
+        revealElements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            
+            if (elementTop < windowHeight - revealPoint) {
+                element.classList.add('active');
+            }
+        });
+        
+        // Animate section lines
+        document.querySelectorAll('.line-animated').forEach(line => {
+            const lineTop = line.getBoundingClientRect().top;
+            if (lineTop < windowHeight - revealPoint) {
+                line.classList.add('active');
+            }
+        });
+        
+        // Animate section titles
+        document.querySelectorAll('.section-title').forEach(title => {
+            const titleTop = title.getBoundingClientRect().top;
+            if (titleTop < windowHeight - revealPoint) {
+                title.classList.add('active');
+            }
+        });
+    };
+    
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll(); // Trigger on load
+
+    // ===== PARALLAX EFFECT =====
+    const heroSection = document.querySelector('.hero, .hero-traiteur');
+    
+    const parallaxScroll = () => {
+        if (heroSection && window.innerWidth > 768) {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * 0.5;
+            heroSection.style.backgroundPositionY = `${rate}px`;
+        }
+    };
+    
+    window.addEventListener('scroll', parallaxScroll);
+
+    // ===== BACK TO TOP BUTTON =====
+    const backToTopBtn = document.getElementById('back-to-top');
+    
+    const toggleBackToTop = () => {
+        if (backToTopBtn) {
+            if (window.scrollY > 400) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        }
+    };
+    
+    window.addEventListener('scroll', toggleBackToTop);
+    
+    if (backToTopBtn) {
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+
+    // ===== CURSOR GLOW EFFECT =====
+    const cursorGlow = document.createElement('div');
+    cursorGlow.classList.add('cursor-glow');
+    document.body.appendChild(cursorGlow);
+    
+    document.addEventListener('mousemove', (e) => {
+        cursorGlow.style.left = e.clientX + 'px';
+        cursorGlow.style.top = e.clientY + 'px';
+    });
+    
+    // Hide cursor glow when leaving window
+    document.addEventListener('mouseleave', () => {
+        cursorGlow.style.opacity = '0';
+    });
+    
+    document.addEventListener('mouseenter', () => {
+        cursorGlow.style.opacity = '1';
+    });
+
     // Mobile menu toggle
     const menuToggle = document.getElementById('menu-toggle');
     if (menuToggle) {
