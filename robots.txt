@@ -3,7 +3,7 @@ Allow: /
 Disallow: /assets/drive/
 
 # Sitemap
-Sitemap: https://dihya-marseille.fr/sitemap.xml
+Sitemap: https://dihya-marseille.com/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1 
