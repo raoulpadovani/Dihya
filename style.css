@@ -36,7 +36,7 @@
     overflow: hidden;
 }
 
-/* ===== ANIMATIONS SCROLL REVEAL ===== */
+
 .reveal {
     opacity: 0;
     transform: translateY(60px);
@@ -81,14 +81,14 @@
     transform: scale(1);
 }
 
-/* Délais d'animation en cascade */
+
 .delay-100 { transition-delay: 0.1s; }
 .delay-200 { transition-delay: 0.2s; }
 .delay-300 { transition-delay: 0.3s; }
 .delay-400 { transition-delay: 0.4s; }
 .delay-500 { transition-delay: 0.5s; }
 
-/* ===== EFFET TEXTE HERO ANIMÉ ===== */
+
 .hero-title {
     overflow: hidden;
 }
@@ -137,7 +137,7 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         
-        /* Animations d'apparition */
+        
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -162,12 +162,12 @@
             animation: fadeIn 1.5s ease-in;
         }
         
-        /* Animation des compteurs */
+        
         .counter {
             transition: all 0.5s ease;
         }
         
-        /* Smooth scroll */
+        
         html {
             scroll-behavior: smooth;
         }
@@ -192,7 +192,7 @@
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
-        /* ===== SECTION AVIS STYLE GOOGLE ===== */
+        
         .google-reviews-section {
             background: #ffffff;
         }
@@ -398,7 +398,7 @@
             }
         }
 
-/* ===== SECTION CONTACT WHATSAPP ===== */
+
 .whatsapp-showcase-section {
     background: radial-gradient(circle at 10% 10%, #f9fafb 0%, #ffffff 45%, #f3f4f6 100%);
 }
@@ -586,7 +586,7 @@
     }
 }
 
-/* ===== EFFET IMAGE HOVER ===== */
+
 .image-reveal {
     overflow: hidden;
     position: relative;
@@ -616,7 +616,7 @@
     opacity: 1;
 }
 
-/* ===== SECTION ALTERNÉE STYLE ===== */
+
 .section-content {
     position: relative;
 }
@@ -630,7 +630,7 @@
     background: linear-gradient(to bottom, transparent, #d97706, transparent);
 }
 
-/* ===== EFFET LIGNE DÉCORATIVE ANIMÉE ===== */
+
 .line-animated {
     width: 0;
     transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
@@ -640,7 +640,7 @@
     width: 5rem;
 }
 
-/* ===== BOUTONS EFFET ÉLÉGANT ===== */
+
 .btn-elegant {
     position: relative;
     overflow: hidden;
@@ -663,7 +663,7 @@
     left: 100%;
 }
 
-/* ===== EFFET FLOATING ===== */
+
 .floating {
     animation: floating 3s ease-in-out infinite;
 }
@@ -673,7 +673,7 @@
     50% { transform: translateY(-10px); }
 }
 
-/* ===== CURSOR EFFET ===== */
+
 .cursor-glow {
     position: fixed;
     width: 20px;
@@ -695,7 +695,7 @@
     }
 }
 
-/* ===== SECTION TITRE EFFET ===== */
+
 .section-title {
     position: relative;
     display: inline-block;
@@ -717,7 +717,7 @@
     transform: translateX(-50%) scaleX(1);
 }
 
-/* ===== LOADER/INTRO ANIMATION ===== */
+
 .page-loader {
     position: fixed;
     top: 0;
@@ -754,13 +754,13 @@
         margin-top: 20%;
     }
     
-    /* Désactiver parallax sur mobile */
+    
     .hero, .hero-traiteur {
         background-attachment: scroll;
     }
 }
 
-/* ===== BOUTONS FLOTTANTS ===== */
+
 .whatsapp-float {
     position: fixed;
     bottom: 88px;
@@ -913,7 +913,7 @@
     box-shadow: 0 6px 20px rgba(217, 119, 6, 0.4);
 }
 
-/* ===== GOOGLE MAP EMBED ===== */
+
 .map-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -932,14 +932,14 @@
     border: 0;
 }
 
-/* ===== FOCUS VISIBLE POUR ACCESSIBILITÉ ===== */
+
 a:focus-visible,
 button:focus-visible {
     outline: 3px solid #d97706;
     outline-offset: 2px;
 }
 
-/* ===== SKIP LINK ACCESSIBILITÉ ===== */
+
 .skip-link {
     position: absolute;
     top: -40px;
@@ -955,12 +955,12 @@ button:focus-visible {
     top: 0;
 }
 
-/* ===== LIENS DANS LE FOOTER ===== */
+
 footer a:hover {
     color: #d97706 !important;
 }
 
-/* ===== AMÉLIORATION RESPONSIVE BOUTONS FLOTTANTS ===== */
+
 @media (max-width: 640px) {
     .whatsapp-float {
         bottom: 78px;
@@ -999,7 +999,7 @@ footer a:hover {
     }
 }
 
-/* ===== WHATSAPP MODAL ===== */
+
 .whatsapp-modal {
     position: fixed;
     inset: 0;

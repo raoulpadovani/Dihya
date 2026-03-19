@@ -1,15 +1,10 @@
-// Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
-    
-    // ===== PAGE LOADER =====
     const loader = document.querySelector('.page-loader');
     if (loader) {
         setTimeout(() => {
             loader.classList.add('hidden');
         }, 1500);
     }
-
-    // ===== SCROLL REVEAL ANIMATION =====
     const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
     
     const revealOnScroll = () => {
@@ -23,16 +18,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 element.classList.add('active');
             }
         });
-        
-        // Animate section lines
         document.querySelectorAll('.line-animated').forEach(line => {
             const lineTop = line.getBoundingClientRect().top;
             if (lineTop < windowHeight - revealPoint) {
                 line.classList.add('active');
             }
         });
-        
-        // Animate section titles
         document.querySelectorAll('.section-title').forEach(title => {
             const titleTop = title.getBoundingClientRect().top;
             if (titleTop < windowHeight - revealPoint) {
@@ -42,9 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
     
     window.addEventListener('scroll', revealOnScroll);
-    revealOnScroll(); // Trigger on load
-
-    // ===== PARALLAX EFFECT =====
+    revealOnScroll();
     const heroSection = document.querySelector('.hero, .hero-traiteur');
     
     const parallaxScroll = () => {
@@ -56,8 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
     };
     
     window.addEventListener('scroll', parallaxScroll);
-
-    // ===== BACK TO TOP BUTTON =====
     const backToTopBtn = document.getElementById('back-to-top');
     
     const toggleBackToTop = () => {
@@ -80,8 +67,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
-
-    // ===== CURSOR GLOW EFFECT =====
     const cursorGlow = document.createElement('div');
     cursorGlow.classList.add('cursor-glow');
     document.body.appendChild(cursorGlow);
@@ -90,8 +75,6 @@ document.addEventListener('DOMContentLoaded', function() {
         cursorGlow.style.left = e.clientX + 'px';
         cursorGlow.style.top = e.clientY + 'px';
     });
-    
-    // Hide cursor glow when leaving window
     document.addEventListener('mouseleave', () => {
         cursorGlow.style.opacity = '0';
     });
@@ -99,16 +82,12 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('mouseenter', () => {
         cursorGlow.style.opacity = '1';
     });
-
-    // Mobile menu toggle
     const menuToggle = document.getElementById('menu-toggle');
     if (menuToggle) {
         menuToggle.addEventListener('click', function() {
             document.getElementById('mobile-menu').classList.toggle('hidden');
         });
     }
-
-    // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -119,16 +98,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     behavior: 'smooth'
                 });
             }
-
-            // Close mobile menu if open
             const mobileMenu = document.getElementById('mobile-menu');
             if (mobileMenu) {
                 mobileMenu.classList.add('hidden');
             }
         });
     });
-
-    // Animation des compteurs
     const counters = document.querySelectorAll('.counter');
     const animateCounter = (counter) => {
         const target = +counter.getAttribute('data-target');
@@ -147,8 +122,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         updateCounter();
     };
-
-    // Observer pour les animations au scroll
     const observerOptions = {
         threshold: 0.3,
         rootMargin: '0px'
@@ -157,21 +130,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Animer les compteurs
                 if (entry.target.classList.contains('counter') && entry.target.textContent === '0') {
                     animateCounter(entry.target);
                 }
-
-                // Ajouter une classe pour les animations
                 entry.target.classList.add('animate-fade-in');
             }
         });
     }, observerOptions);
-
-    // Observer les compteurs
     counters.forEach(counter => observer.observe(counter));
-
-    // Header shadow on scroll
     window.addEventListener('scroll', () => {
         const header = document.querySelector('header');
         if (window.scrollY > 50) {
@@ -180,8 +146,6 @@ document.addEventListener('DOMContentLoaded', function() {
             header.classList.remove('scrolled');
         }
     });
-
-    // Menu filtering
     function filterMenu(category) {
         const menuItems = document.querySelectorAll('.menu-item');
 
@@ -192,8 +156,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 item.style.display = 'none';
             }
         });
-
-        // Update active button styling
         const buttons = document.querySelectorAll('#menu button');
         buttons.forEach(button => {
             if (button.textContent.trim().toLowerCase() === category ||
@@ -206,14 +168,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
-    // Form submission
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-
-            // Get form values
             const name = document.getElementById('name').value;
             const phone = document.getElementById('phone').value;
             const email = document.getElementById('email').value;
@@ -221,14 +179,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const date = document.getElementById('date').value;
             const guests = document.getElementById('guests').value;
             const message = document.getElementById('message').value;
-
-            // Validation basique
             if (!name || !phone || !eventType) {
                 alert('Veuillez remplir tous les champs obligatoires (marqués d\'un *).');
                 return;
             }
-
-            // Here you would typically send the data to a server
             console.log('Demande de devis soumise:', {
                 name,
                 phone,
@@ -238,46 +192,40 @@ document.addEventListener('DOMContentLoaded', function() {
                 guests,
                 message
             });
-
-            // Show success message
             alert('Merci pour votre demande de devis ! Nous vous contacterons dans les plus brefs délais pour discuter de votre projet.');
-
-            // Reset form
             this.reset();
         });
     }
-
-    // ===== WHATSAPP MODAL =====
     const whatsappFloatBtn = document.getElementById('whatsapp-float-btn');
     const whatsappModal = document.getElementById('whatsapp-modal');
     const whatsappBackdrop = document.getElementById('whatsapp-backdrop');
     const whatsappModalClose = document.getElementById('whatsapp-modal-close');
     
     if (whatsappFloatBtn && whatsappModal) {
-        // Open modal on button click
+        
         whatsappFloatBtn.addEventListener('click', (e) => {
             e.preventDefault();
             whatsappModal.classList.remove('hidden');
         });
         
-        // Close modal on backdrop click
+        
         whatsappBackdrop.addEventListener('click', () => {
             whatsappModal.classList.add('hidden');
         });
         
-        // Close modal on close button click
+        
         whatsappModalClose.addEventListener('click', () => {
             whatsappModal.classList.add('hidden');
         });
         
-        // Close modal on Escape key
+        
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && !whatsappModal.classList.contains('hidden')) {
                 whatsappModal.classList.add('hidden');
             }
         });
         
-        // Close modal when a message is clicked (after link opens WhatsApp)
+        
         const messageItems = whatsappModal.querySelectorAll('.wa-message-item');
         messageItems.forEach(item => {
             item.addEventListener('click', () => {
