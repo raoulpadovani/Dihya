@@ -192,6 +192,400 @@
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
+        /* ===== SECTION AVIS STYLE GOOGLE ===== */
+        .google-reviews-section {
+            background: #ffffff;
+        }
+
+        .google-rating-summary {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-bottom: 2.5rem;
+        }
+
+        .google-rating-stars {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            color: #f4b400;
+            font-size: 1.35rem;
+        }
+
+        .google-rating-stars .muted-star {
+            color: #d1d5db;
+        }
+
+        .google-rating-value {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #111827;
+            line-height: 1;
+        }
+
+        .google-rating-count {
+            font-size: 1.2rem;
+            color: #4b5563;
+            font-weight: 500;
+        }
+
+        .google-reviews-track {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            align-items: stretch;
+        }
+
+        .google-review-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 1.15rem;
+            border: 1px solid rgba(17, 24, 39, 0.06);
+            box-shadow: 0 8px 20px rgba(17, 24, 39, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .google-review-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 26px rgba(17, 24, 39, 0.14);
+        }
+
+        .google-review-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .review-platform-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 999px;
+            background: #f3f4f6;
+            border: 1px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .google-g {
+            font-size: 1.55rem;
+            font-weight: 800;
+            line-height: 1;
+            background: linear-gradient(45deg, #4285f4 0 25%, #34a853 25% 50%, #fbbc05 50% 75%, #ea4335 75% 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .google-review-author {
+            color: #111827;
+            font-size: 1.05rem;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+        .google-review-date {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-top: 2px;
+        }
+
+        .google-review-stars {
+            display: flex;
+            align-items: center;
+            gap: 0.18rem;
+            color: #f4b400;
+            font-size: 0.85rem;
+            margin-top: 0.35rem;
+        }
+
+        .google-review-message {
+            color: #1f2937;
+            font-size: 0.98rem;
+            line-height: 1.45;
+            margin-top: 0.75rem;
+        }
+
+        .google-add-review-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.55rem;
+            min-width: min(560px, 100%);
+            padding: 0.85rem 1.6rem;
+            border-radius: 999px;
+            border: 1px solid #3f4958;
+            background: linear-gradient(180deg, #22252b 0%, #191c21 100%);
+            color: #9ec4ff;
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 1;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+            transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+        }
+
+        .google-add-review-btn:hover {
+            border-color: #5f7899;
+            box-shadow: 0 8px 22px rgba(17, 24, 39, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+            transform: translateY(-1px);
+            color: #b8d6ff;
+        }
+
+        .google-add-review-plus {
+            font-size: 2.2rem;
+            font-weight: 300;
+            line-height: 0.8;
+        }
+
+        @media (min-width: 1024px) {
+            .google-reviews-track {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .google-rating-stars {
+                font-size: 1.15rem;
+            }
+
+            .google-rating-value {
+                font-size: 1.35rem;
+            }
+
+            .google-rating-count {
+                font-size: 1rem;
+            }
+
+            .google-review-card {
+                padding: 1rem;
+                border-radius: 14px;
+            }
+
+            .review-platform-icon {
+                width: 40px;
+                height: 40px;
+            }
+
+            .google-g {
+                font-size: 1.3rem;
+            }
+
+            .google-review-author {
+                font-size: 0.95rem;
+            }
+
+            .google-review-date {
+                font-size: 0.82rem;
+            }
+
+            .google-review-message {
+                font-size: 0.92rem;
+                margin-top: 0.65rem;
+            }
+
+            .google-add-review-btn {
+                min-width: 100%;
+                font-size: 1.4rem;
+                padding: 0.75rem 1rem;
+            }
+
+            .google-add-review-plus {
+                font-size: 1.75rem;
+            }
+        }
+
+/* ===== SECTION CONTACT WHATSAPP ===== */
+.whatsapp-showcase-section {
+    background: radial-gradient(circle at 10% 10%, #f9fafb 0%, #ffffff 45%, #f3f4f6 100%);
+}
+
+.whatsapp-phone {
+    width: min(420px, 100%);
+    margin: 0 auto;
+    background: #0b0f14;
+    border-radius: 34px;
+    border: 1px solid #2c3646;
+    box-shadow: 0 30px 60px rgba(2, 6, 23, 0.28);
+    overflow: hidden;
+}
+
+.wa-topbar {
+    height: 52px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #f8fafc;
+    font-weight: 600;
+    font-size: 1.05rem;
+    background: #04070b;
+}
+
+.wa-signals {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+}
+
+.wa-chat-header {
+    height: 74px;
+    background: #0a0d12;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #f8fafc;
+    padding: 0 14px;
+}
+
+.wa-chat-header .fa-chevron-left {
+    font-size: 1.25rem;
+}
+
+.wa-avatar {
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    border-radius: 999px;
+    background: #f5d0de;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.wa-contact-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.wa-verified {
+    color: #22c55e;
+    font-size: 1.05rem;
+}
+
+.wa-chat-body {
+    padding: 14px;
+    background-color: #05080d;
+    background-image:
+        radial-gradient(circle at 25% 15%, rgba(255, 255, 255, 0.04) 0 1px, transparent 1px),
+        radial-gradient(circle at 70% 35%, rgba(255, 255, 255, 0.03) 0 1px, transparent 1px),
+        radial-gradient(circle at 40% 65%, rgba(255, 255, 255, 0.03) 0 1px, transparent 1px),
+        linear-gradient(180deg, #06090f 0%, #04070c 100%);
+    background-size: 24px 24px, 36px 36px, 30px 30px, auto;
+}
+
+.wa-meta-note {
+    background: #111a13;
+    color: #6df59e;
+    text-align: center;
+    border-radius: 14px;
+    padding: 12px 14px;
+    line-height: 1.35;
+    font-size: 0.95rem;
+    margin-bottom: 14px;
+}
+
+.wa-quick-msg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    text-decoration: none;
+    color: #f8fafc;
+    background: rgba(148, 163, 184, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    line-height: 1.25;
+    backdrop-filter: blur(2px);
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.wa-quick-msg:hover {
+    background: rgba(148, 163, 184, 0.28);
+    border-color: rgba(255, 255, 255, 0.22);
+    transform: translateY(-2px);
+}
+
+.wa-quick-msg i {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.wa-input-bar {
+    height: 62px;
+    background: #1c2327;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #f8fafc;
+    padding: 0 14px;
+    font-size: 1.6rem;
+}
+
+.wa-fake-input {
+    flex: 1;
+    height: 34px;
+    border-radius: 999px;
+    background: #3d4348;
+    border-left: 2px solid #22c55e;
+}
+
+@media (max-width: 768px) {
+    .whatsapp-phone {
+        border-radius: 26px;
+    }
+
+    .wa-topbar {
+        height: 46px;
+        font-size: 0.95rem;
+    }
+
+    .wa-chat-header {
+        height: 64px;
+    }
+
+    .wa-avatar {
+        width: 38px;
+        height: 38px;
+    }
+
+    .wa-contact-name {
+        font-size: 1.05rem;
+    }
+
+    .wa-meta-note {
+        font-size: 0.86rem;
+    }
+
+    .wa-quick-msg {
+        font-size: 0.95rem;
+        padding: 12px 13px;
+    }
+
+    .wa-quick-msg i {
+        font-size: 1.25rem;
+    }
+
+    .wa-input-bar {
+        height: 54px;
+        font-size: 1.35rem;
+        gap: 10px;
+    }
+
+    .wa-fake-input {
+        height: 30px;
+    }
+}
+
 /* ===== EFFET IMAGE HOVER ===== */
 .image-reveal {
     overflow: hidden;
@@ -369,31 +763,76 @@
 /* ===== BOUTONS FLOTTANTS ===== */
 .whatsapp-float {
     position: fixed;
-    bottom: 100px;
-    right: 25px;
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
-    color: white;
+    bottom: 88px;
+    right: 12px;
+    width: 92px;
+    height: 92px;
+    color: #22c55e;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 32px;
-    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    box-shadow: none;
     z-index: 1000;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    animation: pulse-whatsapp 2s infinite;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .whatsapp-float:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
 }
 
 @keyframes pulse-whatsapp {
     0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
     50% { box-shadow: 0 4px 30px rgba(37, 211, 102, 0.7); }
+}
+
+.float-ring {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    animation: rotate-ring 10s linear infinite;
+    pointer-events: none;
+}
+
+.float-ring text {
+    font-size: 8.6px;
+    font-weight: 800;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+}
+
+.whatsapp-float .float-ring text {
+    fill: #22c55e;
+}
+
+.deliveroo-float .float-ring text {
+    fill: #00b8a9;
+}
+
+.float-core {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.28);
+}
+
+.float-core-whatsapp {
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+    font-size: 30px;
+}
+
+.float-core-deliveroo {
+    background: linear-gradient(135deg, #00ccbc 0%, #00b8a9 100%);
+}
+
+@keyframes rotate-ring {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 .phone-float {
@@ -417,6 +856,26 @@
 .phone-float:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 25px rgba(217, 119, 6, 0.6);
+}
+
+.deliveroo-float {
+    position: fixed;
+    bottom: 196px;
+    right: 12px;
+    width: 92px;
+    height: 92px;
+    color: #00b8a9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    z-index: 1000;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.deliveroo-float:hover {
+    transform: scale(1.1);
 }
 
 .back-to-top {
@@ -504,11 +963,24 @@ footer a:hover {
 /* ===== AMÉLIORATION RESPONSIVE BOUTONS FLOTTANTS ===== */
 @media (max-width: 640px) {
     .whatsapp-float {
-        bottom: 90px;
-        right: 15px;
-        width: 55px;
-        height: 55px;
-        font-size: 28px;
+        bottom: 78px;
+        right: 8px;
+        width: 78px;
+        height: 78px;
+    }
+
+    .float-ring text {
+        font-size: 7.6px;
+        letter-spacing: 1.4px;
+    }
+
+    .float-core {
+        width: 48px;
+        height: 48px;
+    }
+
+    .float-core-whatsapp {
+        font-size: 24px;
     }
     
     .phone-float {
@@ -517,6 +989,13 @@ footer a:hover {
         width: 50px;
         height: 50px;
         font-size: 22px;
+    }
+
+    .deliveroo-float {
+        bottom: 228px;
+        right: 8px;
+        width: 78px;
+        height: 78px;
     }
     
     .back-to-top {

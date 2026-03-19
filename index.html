@@ -106,6 +106,7 @@
                 <a href="#about" class="text-gray-800 hover:text-amber-600 font-medium text-sm">À propos</a>
                 <a href="assets/image/carte.png" target="_blank" class="text-gray-800 hover:text-amber-600 font-medium text-sm">Notre Carte</a>
                 <a href="#gallery" class="text-gray-800 hover:text-amber-600 font-medium text-sm">Galerie</a>
+                <a href="#reviews" class="text-gray-800 hover:text-amber-600 font-medium text-sm">Avis</a>
                 <a href="#contact" class="text-gray-800 hover:text-amber-600 font-medium text-sm">Contact</a>
             </nav>
             
@@ -127,6 +128,7 @@
                 <a href="#about" class="text-gray-800 hover:text-amber-600 font-medium">À propos</a>
                 <a href="assets/image/carte.png" target="_blank" class="text-gray-800 hover:text-amber-600 font-medium">Notre Carte</a>
                 <a href="#gallery" class="text-gray-800 hover:text-amber-600 font-medium">Galerie</a>
+                <a href="#reviews" class="text-gray-800 hover:text-amber-600 font-medium">Avis</a>
                 <a href="#contact" class="text-gray-800 hover:text-amber-600 font-medium">Contact</a>
             </div>
         </div>
@@ -252,93 +254,116 @@
         </div>
     </section>
 
-    <section class="py-20 bg-white">
+    <section id="reviews" class="py-20 google-reviews-section">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-16 reveal">
-                <h2 class="section-title text-3xl md:text-4xl font-bold text-gray-800 mb-4">Ce que disent nos clients</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Des témoignages qui parlent d'eux-mêmes</p>
-                <div class="line-animated h-1 bg-amber-600 mx-auto mt-4"></div>
+            <div class="google-rating-summary reveal" aria-label="Note Google moyenne">
+                <div class="google-rating-stars" aria-hidden="true">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star muted-star"></i>
+                </div>
+                <p class="google-rating-value">4.5 <span class="google-rating-count">(57 avis)</span></p>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="testimonial-card reveal delay-100 bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl shadow-lg border border-gray-100">
-                    <div class="flex items-center mb-4">
-                        <div class="text-yellow-400 text-xl">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic mb-6">"Petit restaurant caché dans une école. Le personnel est adorable et la cuisine délicieuse."</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
-                            JB
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-800">Julien BEAURAIN</h4>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card reveal delay-200 bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl shadow-lg border border-gray-100">
-                    <div class="flex items-center mb-4">
-                        <div class="text-yellow-400 text-xl">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic mb-6">"Plats délicieux et un personnel adorable
-                        Merci pour la cuisine que vous nous proposez 🥰."</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
-                            AD
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-800">Amandine Dumas</h4>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card reveal delay-300 bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl shadow-lg border border-gray-100">
-                    <div class="flex items-center mb-4">
-                        <div class="text-yellow-400 text-xl">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic mb-6">" Du soleil dans nos assiettes et que du bonheur en bouche !
-                    ."</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
-                            MA
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-800">Mohamed Amri</h4>
-                            
-                        </div>
-                    </div>
-                </div>
+
+            <div class="text-center mb-12 reveal delay-100">
+                <h2 class="section-title text-3xl md:text-5xl font-bold text-gray-900 mb-4">Avis</h2>
+                <div class="line-animated h-1 bg-amber-500 mx-auto mt-4"></div>
             </div>
-            
-            <div class="text-center mt-12">
+
+            <div class="google-reviews-track reveal delay-200" role="list" aria-label="Avis clients">
+                <article class="google-review-card" role="listitem">
+                    <div class="google-review-header">
+                        <div class="review-platform-icon" aria-hidden="true">
+                            <img src="assets/logo/chercher.png" alt="Google" class="google-g" width="20" height="20">
+                        </div>
+                        <div>
+                            <h3 class="google-review-author">Charles Roger</h3>
+                            <p class="google-review-date">décembre 2022</p>
+                            <div class="google-review-stars" aria-hidden="true">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="google-review-message">Lieu chaleureux et plats délicieux!! Je suis venu à l'occasion d'un brunch éphémère, tout était délicieux et dans des quantités généreuses. L'équipe est très accueillante et sympathique. Un super moment!!</p>
+                </article>
+
+                <article class="google-review-card" role="listitem">
+                    <div class="google-review-header">
+                        <div class="review-platform-icon" aria-hidden="true">
+                            <img src="assets/logo/chercher.png" alt="Google" class="google-g" width="20" height="20">
+                        </div>
+                        <div>
+                            <h3 class="google-review-author">Julien Beaurain</h3>
+                            <p class="google-review-date">février 2026</p>
+                            <div class="google-review-stars" aria-hidden="true">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="google-review-message">Petit restaurant caché dans une école. Le personnel est adorable et la cuisine délicieuse.</p>
+                </article>
+
+                <article class="google-review-card" role="listitem">
+                    <div class="google-review-header">
+                        <div class="review-platform-icon" aria-hidden="true">
+                            <img src="assets/logo/chercher.png" alt="Google" class="google-g" width="20" height="20">
+                        </div>
+                        <div>
+                            <h3 class="google-review-author">Amandine Dumas</h3>
+                            <p class="google-review-date">novembre 2025</p>
+                            <div class="google-review-stars" aria-hidden="true">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="google-review-message">Plats délicieux et un personnel adorable. Merci pour la cuisine que vous nous proposez.</p>
+                </article>
+
+                <article class="google-review-card" role="listitem">
+                    <div class="google-review-header">
+                        <div class="review-platform-icon" aria-hidden="true">
+                            <img src="assets/logo/chercher.png" alt="Google" class="google-g" width="20" height="20">
+                        </div>
+                        <div>
+                            <h3 class="google-review-author">Mohamed Amri</h3>
+                            <p class="google-review-date">3 mars 2026</p>
+                            <div class="google-review-stars" aria-hidden="true">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="google-review-message">Du soleil dans nos assiettes et que du bonheur en bouche.</p>
+                </article>
+            </div>
+
+            <div class="text-center mt-12 reveal delay-300">
                 <a href="https://www.google.com/search?sca_esv=18fb8b8532389487&rlz=1C1CHBF_frFR1083FR1083&sxsrf=ANbL-n55HjomCek5SX0azTKbEtNX2Ntdew:1770997022623&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qORaAHn2PyexrqT0BRl0Ia__4HNFnQCyBg3k3Jzc060RPBw0zgypIX2p2vC8inOvomazLNhLQ1M7y5YISjJL6vrXyzAkd&q=DIHYA+Avis&sa=X&ved=2ahUKEwj66rmD5taSAxV9BdsEHatML4cQ0bkNegQIORAH&biw=1280&bih=585&dpr=1.5&safe=active&ssui=on" target="_blank" class="inline-flex items-center gap-3 bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-700 hover:to-amber-600 text-white font-bold py-4 px-10 rounded-full transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-                    <i class="fas fa-star text-xl"></i>
-                    <span class="text-lg">Laisser un avis Google</span>
+                    <i class="fab fa-google text-xl"></i>
+                    <span class="text-lg">Ajouter un avis Google</span>
                 </a>
-                <p class="text-gray-500 text-sm mt-4">Votre avis compte pour nous ❤️</p>
             </div>
         </div>
     </section>
+
+    
     
     <footer id ="contact"class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-8">
         <div class="container mx-auto px-2">
@@ -440,7 +465,35 @@
        class="whatsapp-float" 
        aria-label="Nous contacter sur WhatsApp"
        title="Contactez-nous sur WhatsApp">
-        <i class="fab fa-whatsapp"></i>
+        <svg class="float-ring" viewBox="0 0 100 100" aria-hidden="true">
+            <defs>
+                <path id="wa-ring-index" d="M 50,50 m -36,0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0"></path>
+            </defs>
+            <text>
+                <textPath href="#wa-ring-index" startOffset="0%">RESERVER ICI • RESERVER ICI • </textPath>
+            </text>
+        </svg>
+        <span class="float-core float-core-whatsapp" aria-hidden="true">
+            <i class="fab fa-whatsapp"></i>
+        </span>
+    </a>
+
+    <a href="https://deliveroo.fr/fr/menu/marseille/marseille-port/dihya?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=COLLECTION"
+       target="_blank"
+       class="deliveroo-float"
+       aria-label="Commander sur Deliveroo"
+       title="Commander sur Deliveroo">
+        <svg class="float-ring" viewBox="0 0 100 100" aria-hidden="true">
+            <defs>
+                <path id="deli-ring-index" d="M 50,50 m -36,0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0"></path>
+            </defs>
+            <text>
+                <textPath href="#deli-ring-index" startOffset="0%">COMMANDER ICI • COMMANDER ICI • </textPath>
+            </text>
+        </svg>
+        <span class="float-core float-core-deliveroo" aria-hidden="true">
+            <img src="assets/logo/deli.png" alt="Deliveroo" class="w-7 h-7" loading="lazy">
+        </span>
     </a>
     
     
