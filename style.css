@@ -997,6 +997,128 @@ footer a:hover {
         width: 78px;
         height: 78px;
     }
+}
+
+/* ===== WHATSAPP MODAL ===== */
+.whatsapp-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1001;
+    display: flex;
+    align-items: flex-end;
+    animation: slideUp 0.3s ease-out;
+}
+
+.whatsapp-modal.hidden {
+    display: none;
+}
+
+.whatsapp-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease-out;
+}
+
+.whatsapp-modal-content {
+    position: relative;
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 16px 16px 0 0;
+    padding: 0;
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.15);
+    animation: slideUp 0.3s ease-out;
+}
+
+.whatsapp-modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    border: none;
+    color: #64748b;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+}
+
+.whatsapp-modal-close:hover {
+    color: #1e293b;
+}
+
+.wa-modal-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 24px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #22c55e;
+}
+
+.wa-modal-header i {
+    font-size: 24px;
+}
+
+.wa-modal-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0;
+}
+
+.wa-messages-list {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.wa-message-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    color: #1e293b;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    border-bottom: 1px solid #f1f5f9;
+    cursor: pointer;
+}
+
+.wa-message-item:last-child {
+    border-bottom: none;
+}
+
+.wa-message-item:hover {
+    background-color: #f0fdf4;
+}
+
+.wa-message-item i {
+    font-size: 20px;
+    color: #22c55e;
+    flex-shrink: 0;
+}
+
+.wa-message-item span {
+    flex: 1;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media (max-width: 640px) {
+    .whatsapp-modal-content {
+        max-width: 100%;
+    }
     
     .back-to-top {
         bottom: 25px;

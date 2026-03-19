@@ -247,4 +247,45 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // ===== WHATSAPP MODAL =====
+    const whatsappFloatBtn = document.getElementById('whatsapp-float-btn');
+    const whatsappModal = document.getElementById('whatsapp-modal');
+    const whatsappBackdrop = document.getElementById('whatsapp-backdrop');
+    const whatsappModalClose = document.getElementById('whatsapp-modal-close');
+    
+    if (whatsappFloatBtn && whatsappModal) {
+        // Open modal on button click
+        whatsappFloatBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            whatsappModal.classList.remove('hidden');
+        });
+        
+        // Close modal on backdrop click
+        whatsappBackdrop.addEventListener('click', () => {
+            whatsappModal.classList.add('hidden');
+        });
+        
+        // Close modal on close button click
+        whatsappModalClose.addEventListener('click', () => {
+            whatsappModal.classList.add('hidden');
+        });
+        
+        // Close modal on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !whatsappModal.classList.contains('hidden')) {
+                whatsappModal.classList.add('hidden');
+            }
+        });
+        
+        // Close modal when a message is clicked (after link opens WhatsApp)
+        const messageItems = whatsappModal.querySelectorAll('.wa-message-item');
+        messageItems.forEach(item => {
+            item.addEventListener('click', () => {
+                setTimeout(() => {
+                    whatsappModal.classList.add('hidden');
+                }, 100);
+            });
+        });
+    }
+
 });

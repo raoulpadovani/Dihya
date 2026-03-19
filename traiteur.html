@@ -514,8 +514,7 @@
     </footer>
     
     <!-- Bouton WhatsApp flottant -->
-    <a href="https://wa.me/33646852234?text=Bonjour%2C%20je%20souhaite%20demander%20un%20devis%20pour%20un%20%C3%A9v%C3%A9nement." 
-       target="_blank" 
+    <button id="whatsapp-float-btn"
        class="whatsapp-float" 
        aria-label="Demander un devis sur WhatsApp"
        title="Contactez-nous sur WhatsApp">
@@ -530,7 +529,35 @@
         <span class="float-core float-core-whatsapp" aria-hidden="true">
             <i class="fab fa-whatsapp"></i>
         </span>
-    </a>
+    </button>
+    
+    <!-- Modal WhatsApp avec messages prédéfinis -->
+    <div id="whatsapp-modal" class="whatsapp-modal hidden">
+        <div class="whatsapp-modal-backdrop" id="whatsapp-backdrop"></div>
+        <div class="whatsapp-modal-content">
+            <button id="whatsapp-modal-close" class="whatsapp-modal-close" aria-label="Fermer">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="wa-modal-header">
+                <i class="fab fa-whatsapp"></i>
+                <h3>Choisir un message</h3>
+            </div>
+            <div class="wa-messages-list">
+                <a href="https://wa.me/33646852234?text=je%20veux%20r%C3%A9serv%C3%A9%20une%20table" target="_blank" class="wa-message-item">
+                    <i class="fas fa-utensils"></i>
+                    <span>je veux réservé une table</span>
+                </a>
+                <a href="https://wa.me/33646852234?text=j%27aimerais%20avoir%20des%20informations" target="_blank" class="wa-message-item">
+                    <i class="fas fa-info-circle"></i>
+                    <span>j'aimerais avoir des informations</span>
+                </a>
+                <a href="https://wa.me/33646852234?text=je%20trouve%20pas%20le%20r%C3%A9staurant" target="_blank" class="wa-message-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>je trouve pas le réstaurant</span>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <!-- Bouton Deliveroo flottant -->
     <a href="https://deliveroo.fr/fr/menu/marseille/marseille-port/dihya?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=COLLECTION"
