@@ -997,6 +997,13 @@ footer a:hover {
         width: 78px;
         height: 78px;
     }
+
+    /* Masquer le bouton Deliveroo flottant sur mobile */
+    @media (max-width: 640px) {
+        .deliveroo-float {
+            display: none !important;
+        }
+    }
 }
 
 
